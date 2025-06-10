@@ -1,0 +1,99 @@
+[0;90m12:16:48.735[0m [0;37mSTDOUT[0m [0;36mterraform: [0mAcquiring state lock. This may take a few moments...
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0mTerraform used the selected providers to generate the following execution
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0mplan. Resource actions are indicated with the following symbols:
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m  [32m+[0m create[0m[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0mTerraform will perform the following actions:
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[1m  # module.aks.azurerm_kubernetes_cluster.aks[0m will be created[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[0m  [32m+[0m[0m resource "azurerm_kubernetes_cluster" "aks" {[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m api_server_authorized_ip_ranges     = (known after apply)[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m current_kubernetes_version          = (known after apply)[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m dns_prefix                          = "aksflux"[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m fqdn                                = (known after apply)[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m http_application_routing_zone_name  = (known after apply)[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m id                                  = (known after apply)[0m
+[0;90m12:17:00.407[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m image_cleaner_enabled               = false[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m image_cleaner_interval_hours        = 48[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m kube_admin_config                   = (sensitive value)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m kube_admin_config_raw               = (sensitive value)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m kube_config                         = (sensitive value)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m kube_config_raw                     = (sensitive value)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m kubernetes_version                  = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m location                            = "eastus"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m name                                = "my-cluster"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m node_resource_group                 = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m node_resource_group_id              = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m oidc_issuer_url                     = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m portal_fqdn                         = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m private_cluster_enabled             = false[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m private_cluster_public_fqdn_enabled = false[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m private_dns_zone_id                 = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m private_fqdn                        = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m public_network_access_enabled       = true[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m resource_group_name                 = "my-rg"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m role_based_access_control_enabled   = true[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m run_command_enabled                 = true[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m sku_tier                            = "Free"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m support_plan                        = "KubernetesOfficial"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m workload_identity_enabled           = false[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m api_server_access_profile (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m auto_scaler_profile (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m default_node_pool {[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m kubelet_disk_type    = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m max_pods             = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m name                 = "default"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m node_count           = 1[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m node_labels          = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m orchestrator_version = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m os_disk_size_gb      = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m os_disk_type         = "Managed"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m os_sku               = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m scale_down_mode      = "Delete"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m type                 = "VirtualMachineScaleSets"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m ultra_ssd_enabled    = false[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m vm_size              = "standard_a2_v2"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m workload_runtime     = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m        }
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m identity {[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m principal_id = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m tenant_id    = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m type         = "SystemAssigned"[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m        }
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m kubelet_identity (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m network_profile (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m windows_profile (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m    }
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[1m  # module.aks.azurerm_resource_group.rg[0m will be created[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[0m  [32m+[0m[0m resource "azurerm_resource_group" "rg" {[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m id       = (known after apply)[0m
+[0;90m12:17:00.408[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m location = "eastus"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m name     = "my-rg"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m    }
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[1m  # module.flux.azurerm_kubernetes_cluster_extension.flux[0m will be created[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[0m  [32m+[0m[0m resource "azurerm_kubernetes_cluster_extension" "flux" {[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m aks_assigned_identity  = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m cluster_id             = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m configuration_settings = {[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m "gitRepository.branch"       = "develop"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m "gitRepository.syncInterval" = "1m"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m "gitRepository.url"          = "https://github.com/iemkamran/gitops-app"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m "kustomization.interval"     = "1m"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m "kustomization.path"         = "clusters/dev"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m          [32m+[0m[0m "kustomization.prune"        = "true"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m        }
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m current_version        = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m extension_type         = "microsoft.flux"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m id                     = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m name                   = "flux"[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m release_namespace      = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m release_train          = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m      [32m+[0m[0m target_namespace       = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m    }
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[1mPlan:[0m 3 to add, 0 to change, 0 to destroy.[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[0m[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0mChanges to Outputs:
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m  [32m+[0m[0m cluster_id = (known after apply)[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m[90m[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0m─────────────────────────────────────────────────────────────────────────────[0m[0m
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0mNote: You didn't use the -out option to save this plan, so Terraform can't
+[0;90m12:17:00.409[0m [0;37mSTDOUT[0m [0;36mterraform: [0mguarantee to take exactly these actions if you run "terraform apply" now.
+[0;90m12:17:00.809[0m [0;37mSTDOUT[0m [0;36mterraform: [0mReleasing state lock. This may take a few moments...
