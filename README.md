@@ -30,7 +30,7 @@ infrastructure/
 ├── prod/
 │ └── terragrunt.hcl
 │
-└── terragrunt.hcl (optional root configuration)
+└── terragrunt.hcl
 ```
 
 
